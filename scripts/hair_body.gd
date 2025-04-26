@@ -13,8 +13,7 @@ func _ready():
 	hair_image = original_texture.get_image()
 
 func _process(_delta):
-	if Input.is_action_just_released(""):
-		cut_hair()
+	pass
 
 func _input(event):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
@@ -42,3 +41,9 @@ func erase_line(from, to):
 		if x >= 0 and y >= 0 and x < hair_image.get_width() and y < hair_image.get_height():
 			var color = hair_image.get_pixel(x, y)
 			hair_image.set_pixel(x, y, Color(color.r, color.g, color.b, 0.0))
+
+
+func _on_line_cut_cut_finished() -> void:
+	cut_hair()
+	line_drawer.clear_points()
+	pass # Replace with function body.

@@ -14,3 +14,5 @@ texture = ExtResource("1_42711")
 stretch_mode = 2
 
 [node name="LineCut" parent="." instance=ExtResource("3_tmg8s")]
+
+[connection signal="cutFinished" from="LineCut" to="." method="_on_line_cut_cut_finished"]
