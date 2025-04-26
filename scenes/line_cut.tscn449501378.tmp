@@ -6,8 +6,7 @@
 [node name="LineCut" type="Node2D"]
 script = ExtResource("1_pci5v")
 
-[node name="line_drawer" type="Line2D" parent="."]
-points = PackedVector2Array(0, 0, 0, 0)
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(226, 193, 328, 207)
 texture = ExtResource("1_cuqan")
 texture_mode = 1
-antialiased = true

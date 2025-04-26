@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj3gjr2bdc5k8"]
+
+[ext_resource type="Texture2D" uid="uid://1frsrer5dpa4" path="res://assets/veggie_boy.png" id="1_42711"]
+[ext_resource type="Script" uid="uid://bcb3nws5yxlbm" path="res://scripts/hair_body.gd" id="1_shrmy"]
+[ext_resource type="PackedScene" uid="uid://bkvl37o4aotfo" path="res://scenes/line_cut.tscn" id="3_tmg8s"]
+
+[node name="hairBody" type="Node2D"]
+script = ExtResource("1_shrmy")
+
+[node name="HairTexture" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_42711")
+stretch_mode = 2
+
+[node name="LineCut" parent="." instance=ExtResource("3_tmg8s")]
